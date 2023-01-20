@@ -1,0 +1,141 @@
+<!--124109 September 27, 2022-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>License Renewal</title>
+
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="NavBarStylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corinthia">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Script.js"></script>
+
+</head>
+
+<body onload="randimg()" id="body">
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Sexualities.html">Identities</a></li>
+            <li><a href="Attractions.html">Attractions</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <form autocomplete="off" action="">
+        <fieldset>
+
+            <legend>License Renewal</legend>
+
+            <label for="first">First name:</label>
+            <input type="text" id="first" required>
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" required>
+
+        </br>
+
+            <label for="license">Please Select your License:</label>
+            <select id="license" onchange="chan()" required>
+                <option selected="selected" value="" disabled hidden><--Sexuality--></option>
+                <option id="gay" name="qu" value="Gay">Gay</option>
+                <option id="lesbian" name="qu" value="Lesbian">Lesbian</option>
+                <option id="bisexual" name="qu" value="Bisexual">Bisexual</option>
+                <option id="pansexual" name="qu" value="Pansexual">Pansexual</option>
+                <option id="asexual" name="qu" value="Asexual">Asexual</option>
+                <option id="aromantic" name="qu" value="Aromantic">Aromantic</option>
+                <option id="non-binary" name="qu" value="Non-Binary">Non-Binary</option>
+                <option id="demigender" name="qu" value="Demigender">Demigender</option>
+                <option id="demisexual" name="qu" value="Demisexual">Demisexual</option>
+                <option id="polyamorous" name="qu" value="Polyamorous">Polyamorous</option>
+            </select>
+
+        </br>
+
+            <label for="plan">Please Select Your Plan:</label>
+
+        </br>
+
+            <input type="radio" id="1Month" name="plan" onclick="money1m()" required>
+            <label for="1Month">1 Month($19.99 per Month)</label>
+            <input type="radio" id="3Month" name="plan" onclick="money3m()">
+            <label for="3Month">3 Months($14.99 per Month)</label>
+        </br>
+            <input type="radio" id="1Year" name="plan" onclick="money1y()">
+            <label for="1Year">1 Year($12.99 per Month)</label>
+            <input type="radio" id="3Year" name="plan" onclick="money3y()">
+            <label for="3Year">3 Years(9.99 per Month)</label>
+
+            <p id="total">Subtotal: $0.00</p>
+
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" required>
+
+        </br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" value="(123)-456-7890" pattern="[(][0-9]{3}[)]-[0-9]{3}-[0-9]{4}" required>
+
+        </br>
+
+            <label for="carnum">Please Enter Card Information</label>
+
+        </br>
+
+            <label for="carnum">Card Number:</label>
+            <input type="password" id="carnum" name="carnum" maxlength="19" required>
+
+        </br>
+
+            <label for="exp">Expiration:</label>
+            <input type="text" name="exp" id="exp" value="MM/YY" pattern="[0-1][0-9]/[2-3][0-9]">
+
+            <label for="cvv">CVV/CVC:</label>
+            <input type="password" name="cvv" id="cvv" maxlength="3" required>
+
+        </br>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+    <div class="tbl">
+        <table>
+            <tr>
+                <td><img id="Gay" name="true" src="Gay.png"></td>
+                <td><img id="Lesbian" name="true" src="Lesbian.png"></td>
+            </tr>
+            <tr>
+                <td><img id="Bisexual" name="true" src="Bisexual.png"></td>
+                <td><img id="Pansexual" name="true" src="Pansexual.png"></td>
+            </tr>
+            <tr>
+                <td><img id="Asexual" name="true" src="Asexual.png"></td>
+                <td><img id="Aromantic" name="true" src="Aromantic.png"></td>
+            </tr>
+            <tr>
+                <td><img id="Non-Binary" name="true" src="Non-Binary.png"></td>
+                <td><img id="Demigender" name="true" src="Demigender.png"></td>
+            </tr>
+            <tr>
+                <td><img id="Demisexual" name="true" src="Demisexual.png"></td>
+                <td><img id="Polyamorous" name="true" src="Polyamorous.png"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="invoice" id="invoice">
+        <h1 class="Head">Your Invoice:</h1>
+        <p id="inv"></p>
+    </br>
+        <button onclick="cpy()" class="copy">Copy Invoice</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+body {
+    background: #4cc9f0;
+}
+
+.tbl {
+    margin: 0;
+    padding: 0;
+    background: #b5179e;
+    position: absolute;
+    transform: TranslateY(-50%);
+    top: 50%;
+    right: 15%;
+}
+
+table {
+    line-height: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10%;
+
+}
+
+p {
+    padding: 0 0 0 0;
+}
+
+fieldset {
+    border-radius: 20px;
+    background-color: #4361ee;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: #f72585;
+}
+
+select{
+    font-size: 20px;
+    font-family: inherit;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #4cc9f0;
+    background-color: #b5179e;
+    color: inherit;
+}
+
+input {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #4cc9f0;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: #b5179e;
+    color: inherit;
+}
+
+button {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #4cc9f0;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: #b5179e;
+    color: inherit;
+}
+
+.invoice {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background: rgba(214, 2, 112, 0.92);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: rgba(76, 201, 240, 0.92);
+    transform: translateX(-50%) translateY(-50%);
+    top: -50%;
+    left: 50%;
+}
+
+.invoice button {
+    background: rgba(214, 2, 112, 0.92);
+    border-color: rgba(76, 201, 240, 0.92);
+}
+
+.invoice button:active {
+    background: rgba(76, 201, 240, 0.92);
+    border-color: rgba(214, 2, 112, 0.92);
+}
+
+@keyframes invoicein {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 50%;
+    }
+}
+
+@keyframes invoiceout {
+    0% {
+      top: 50%;
+    }
+    100% {
+      top: -50%;
+    }
+}

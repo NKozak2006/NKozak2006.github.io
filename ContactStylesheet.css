@@ -1,0 +1,185 @@
+.form {
+    width: 50%;
+    background: #FF76A4;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%) translateX(-50%);
+    top: 35%;
+    left: 50%;
+    border-radius: 20px;
+}
+
+@keyframes borderout {
+    0% {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    1% {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    100% {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@keyframes borderin {
+    0% {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    99% {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    100% {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+#img {
+    background-color: transparent;
+    border: none;
+    padding-bottom: 5%;
+}
+
+h1 {
+    font-size: 400%;
+    margin: 0;
+    padding: 2% 0 1% 0;
+}
+
+p {
+    font-size: 200%;
+    margin: 0;
+    padding-bottom: 2%;
+}
+
+.form label {
+    font-size: 200%;
+    /* padding-bottom: 2%; */
+}
+
+.quirky {
+    background: #FF76A4;
+    height: 0px;
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    top: 56.7%;
+    left: 50%;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.quirky label {
+    font-size: 150%;
+}
+
+.quirky input {
+    font-size: 150%;
+    font-family: inherit;
+    border-radius: 15px;
+    background: #C011D7;
+    border-style: solid;
+    border-color: #2F3CBE;
+    border-width: 2px;
+}
+
+.quirky textarea {
+    font-size: 150%;
+    font-family: inherit;
+    resize: none;
+    width: 80%;
+    border-radius: 15px;
+    background: #C011D7;
+    border-style: solid;
+    border-color: #2F3CBE;
+    border-width: 2px;
+}
+
+.back {
+    margin: 0;
+    padding: 2% 0 0 0;
+}
+
+.bttn {
+    padding: 0;
+    margin: 0;
+}
+
+.quirky button {
+    font-family: inherit;
+    font-size: 100%;
+    width: 10%;
+    border-radius: 10px;
+    background: #C011D7;
+    border-style: solid;
+    border-color: #2F3CBE;
+    border-width: 2px;
+}
+
+.quirky button:active {
+    background: #2F3CBE;
+    border-color: #C011D7;
+}
+
+#image {
+    transition: transform 0.5s;
+}
+
+@keyframes displayin {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 300px;
+    }
+}
+
+@keyframes displayout {
+    0% {
+        height: 300px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+#msg {
+    text-align: center;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    top: -50%;
+    width: 40%;
+    height: 30%;
+    background: #2F3CBE;
+    transition: top 1s;
+    border-radius: 20px;
+}
+
+#msg p {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#msg div {
+    position: relative;
+    transform: translateY(-50%);
+    top: 45%;
+}
+
+#msg button {
+    font-family: inherit;
+    font-size: 150%;
+    width: 20%;
+    border-radius: 10px;
+    background: black;
+    color: #C011D7;
+}
