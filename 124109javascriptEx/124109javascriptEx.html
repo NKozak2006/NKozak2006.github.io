@@ -1,0 +1,45 @@
+<!--124109 September 1, 2022-->
+<!DOCTYPE HTML>
+<head>
+
+    <title>
+        Javascript
+    </title>
+
+    <link rel="stylesheet" href="Script.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="shortcut icon" id="favicon" type="image/png" href="PurpleWorld.png">
+
+    <script src="Script.js"></script>
+
+</head>
+
+<body onload="myonload()">
+    <h1 id="welcome" class="welcome"></h1>
+
+    <textarea class="colors" id="colors" disabled></textarea>
+
+    <form>
+        <table>
+            <tr>
+                <td><input type="button" value="Purple" class="purple" onclick="purple();"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Red" class="red" onclick="red();"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Green" class="green" onclick="green();"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Blue" class="blue" onclick="blue();"></td>
+            </tr>
+        </table>
+    </form>
+
+    <p class="clicktxt">Click to cycle photos!</p>
+
+    <img src="PurpleFlower.png" id="imagefile" alt="flower">
+</br>
+    <input type="button" value="Click Me!" class="imagebutton" id="imagebutton" onclick="imagecycle();">
+
+</body>
