@@ -14,3 +14,10 @@ body {
     display: inline;
     float: left;
 }
+
+#nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 15 5 15 5;
+    background: white;
+}
