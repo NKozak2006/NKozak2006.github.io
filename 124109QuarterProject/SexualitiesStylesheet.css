@@ -1,0 +1,55 @@
+body {
+    overflow-y: hidden;
+    background: #abe6c9;
+}
+
+img {
+    height: 110px;
+    width: 110px;
+    position: sticky;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 50% 0 0 50%;
+    z-index: 1;
+    transition: width 1s, height 1s;
+}
+
+img:hover {
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+}
+
+td {
+    height: 110px;
+}
+
+.table {
+    background: #210e43;
+    position: absolute;
+    transform: translateY(-50%) TranslateX(-50%);
+    top: 53.5%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+table {
+    padding: 0 30px 30px 30px;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ima {
+    width: 110px;
+    height: 110px;
+}
+
+p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

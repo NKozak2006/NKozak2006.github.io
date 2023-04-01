@@ -1,0 +1,106 @@
+body {
+    font-family: "Leckerli One";
+    background: #eff7f6;
+    color: #b2f7ef;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+}
+
+.monstimg {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-right: 10%;
+    display: block;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-radius: 20px;
+    border-color: #f2b5d4;
+    background: #f7d6e0;
+}
+
+.result {
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    visibility: hidden;
+    display: none;
+}
+
+.result img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 5px;
+}
+
+button {
+    background: #f7d6e0;
+    color: #b2f7ef;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: inherit;
+    text-align: center;
+    border-color: #f2b5d4;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    vertical-align: baseline;
+}
+
+button:active {
+    background: #b2f7ef;
+    color: #f7d6e0;
+}
+
+.btal {
+    margin-top: 130px;
+}
+
+.buttns {
+    float: left;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin-left: 10%;
+    border-color: #f2b5d4;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+}
+
+.tablemon {
+    display: none;
+    visibility: hidden;
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-right: 10%;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-radius: 20px;
+    border-color: #f2b5d4;
+}
+
+td img{
+    width: 96px;
+    height: 92.5px;
+    border-radius: 10px;
+    padding: 0 0 0 0;
+    margin: none;
+}
+
+table {
+    padding: 0 0 0 0;
+}
+
+tr {
+    padding: 0 0 0 0;
+    margin: none;
+}
+
+td {
+    padding: 0 0 0 0;
+    margin: none;
+}

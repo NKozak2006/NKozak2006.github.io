@@ -1,0 +1,57 @@
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-family: Corinthia;
+    background: #FFFFFF;
+}
+
+li {
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+a {
+    display: block;
+    color: rgb(0, 106, 255);
+    padding: 10px 0 10px 0;
+    margin: 0 0 0 0;
+    width: 125px;
+    transition: width 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.navbar {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 30px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #FF76A4, #FF76A4, #FF76A4, #FFFFFF, #C011D7, #000000, #2F3CBE, #FF76A4, #FF76A4, #FF76A4);
+    background-size: 500% 500%;
+    animation: gradient 4s linear infinite normal;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+}
