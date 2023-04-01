@@ -1,0 +1,129 @@
+body {
+    font-family: 'Dancing Script';
+    background: linear-gradient(-45deg, rgb(7, 121, 221),#23a6d5, #23d5ab, rgb(2, 255, 133));
+    background-size: 500% 500%;
+    animation: gradient 5s ease infinite;
+    height: 35vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+}
+
+form input {
+    width: 120px;
+    font-size: 30px;
+    font-family: Dancing Script;
+    border-radius: 15px;
+    background-color: rgb(123, 248, 235);
+    box-shadow: 4px 4px rgb(33, 114, 106);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 45px;
+}
+
+form input:active {
+    position: relative;
+    left: 4px;
+    top: 49px;
+    box-shadow: 0px 0px;
+}
+
+form input:hover {
+    cursor: pointer;
+}
+
+.workspace {
+    width: 370px;
+    color:black;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+.workspace:hover {
+    cursor: default;
+}
+
+.workspace:active {
+    position: relative;
+    left: 0;
+    top: 45px;
+    box-shadow: 4px 4px rgb( 33, 114, 106);
+}
+
+.calchist {
+    float: right;
+    resize: none;
+    display: block;
+    position: absolute;
+    bottom: 232px;
+    right: 20px;
+    font-family: Dancing Script;
+    color: black;
+    font-size: 25px;
+    border-radius: 15px;
+    background: rgb(123, 248, 235);
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+}
+
+.memhist {
+    float: left;
+    resize: none;
+    display: block;
+    position: absolute;
+    bottom: 232px;
+    left: 20px;
+    font-family: Dancing Script;
+    color: black;
+    font-size: 25px;
+    border-radius: 15px;
+    background: rgb(123, 248, 235);
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+}
+
+.memhis {
+    float: left;
+    margin-left: 160px;
+}
+
+.calhist {
+    float: right;
+    margin-right: 160px;
+}
+
+h2 {
+    display: inline;
+    font-size: 30px;
+}
+
+.clrmem {
+    font-size: 21px;
+    margin-top: 0px;
+    margin-left: 135px;
+}
+
+.clrhis {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-right: 135px;
+    float: right;
+}
