@@ -1,0 +1,30 @@
+body {
+    background: #ff009e;
+    font-family: Delicious Handrawn;
+    text-align: center;
+}
+
+#love {
+    visibility: hidden;
+}
+
+#fill {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+input {
+    background: #fea0ff;
+    color: black;
+    border: darkred solid 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Delicious Handrawn;
+}
+
+div {
+    padding: 15% 0;
+}
