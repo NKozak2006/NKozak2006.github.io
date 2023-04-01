@@ -1,3 +1,7 @@
 body {
     background: darkblue;
 }
+
+#nav {
+    display: inline;
+}
