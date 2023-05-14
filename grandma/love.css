@@ -1,0 +1,46 @@
+body {
+    background-image: linear-gradient(to top right, #d808fc, #f408fc, #fc08e8, #fc08bb, #fc088a, #fc088a);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    font-family: Delicious Handrawn;
+    text-align: center;
+    overflow: hidden;
+}
+
+#love {
+    visibility: hidden;
+}
+
+#fill {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+input {
+    background: #fea0ff;
+    color: black;
+    border: darkred solid 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Delicious Handrawn;
+}
+
+div {
+    padding: 15% 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
