@@ -1,0 +1,269 @@
+body {
+    background: #462c41;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* /// [Cover] */
+
+#cover {
+    position: absolute;
+    width: 55vh;
+    height: 51vh;
+    transform: translateY(-50%) scale(1);
+    top: 50%;
+    background-image: url("https://nkozak2006.github.io/melanie_martinez/images/cbimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 15%;
+    transition: 1s ease-out;
+    box-shadow: 10px 10px #2e81c8, -10px -10px #cfaec9;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+#cover:hover {
+    transform: translateY(-50%) scale(1.25);
+}
+
+/* /// [Content Container] */
+
+#cont {
+    position: absolute;
+    width: 55vh;
+    height: 51vh;
+    transform: translateY(-50%) scale(1);
+    top: 50%;
+    right: 15%;
+    background: black;
+    color: #494b71;
+    transition: 1s ease-out;
+    box-shadow: 10px 10px #2e81c8, -10px -10px #cfaec9;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+#cont:hover {
+    transform: translateY(-50%) scale(1.25);
+}
+
+/* /// [Lyrics] */
+
+#lyr {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 0%;
+    background: #e4d6e5;
+    display: block;
+}
+
+h1 {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+pre {
+    font-family: inherit;
+    font-size: 12px;
+    margin: 0;
+    position: absolute;
+    width: 27.5vh;
+    text-align: center;
+    line-height: 8px;
+    font-weight: bolder;
+}
+
+#left {
+    left: 25%;
+    top: 8%;
+    transform: translateX(-50%);
+}
+
+#right {
+    right: 25%;
+    top: 8%;
+    transform: translateX(50%);
+}
+
+/* /// [Background] */
+
+#cont_bg {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 0%;
+    background: #e4d6e5;
+    display: none;
+}
+
+#cont_bg h1 {
+    width: fit-content;
+    position: absolute;
+    left: 48%;
+    top: 7%;
+    font-size: 30px;
+    transform: translateX(-50%);
+}
+
+#cont_bg p {
+    margin: 0;
+    width: 75%;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* /// [Music] */
+
+#mus {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 0%;
+    background: #e4d6e5;
+    display: none;
+}
+
+#mus h1 {
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+audio {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* /// [Content Bar] */
+
+#cont_bar {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    background: #494b71;
+}
+
+#cont_bar div {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+#list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(255,255,255,0);
+    font-family: inherit;
+}
+
+.list_cont {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    float: left;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.list_cont button {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 41px;
+    font-family: inherit;
+    color: black;
+    font-size: 20px;
+}
+
+.list_cont button:hover {
+    cursor: pointer;
+}
+
+#lyr_but {
+    background: #e4d6e5;
+}
+
+#bg_but {
+    background: none;
+}
+
+#mus_but {
+    background: none;
+}
+
+#list li div {
+    position: absolute;
+    width: 100px;
+    background: #e4d6e5;
+    height: 5px;
+    transform: translateY(-50%);
+}
+
+#but_1 {
+    visibility: visible;
+}
+
+#but_2, #but_3 {
+    visibility: hidden;
+}
+
+/* /// [Animation] */
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

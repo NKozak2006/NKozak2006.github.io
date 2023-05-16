@@ -4,6 +4,8 @@ body {
     background-size: cover;
 }
 
+/* /// [Cover] */
+
 #cover {
     position: absolute;
     width: 55vh;
@@ -26,6 +28,8 @@ body {
 #cover:hover {
     transform: translateY(-50%) scale(1.25);
 }
+
+/* /// [Background] */
 
 #bg {
     position: absolute;
@@ -67,6 +71,8 @@ p1 {
     font-size: 3vh;
     line-height: 3vh;
 }
+
+/* /// [Aniamtion] */
 
 @keyframes fadeIn {
     0% {opacity:0;}

@@ -1,9 +1,11 @@
 body {
-    background-image: url("https://nkozak2006.github.io/melanie_martinez/backgrounds/homebg.jpg");
+    background: rgb(18, 2, 2);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
+
+/* /// [Cover] */
 
 #cover {
     position: absolute;
@@ -28,7 +30,7 @@ body {
     transform: translateY(-50%) scale(1.25);
 }
 
-/* BREAK */
+/* /// [Content] */
 
 #cont {
     position: absolute;
@@ -61,7 +63,7 @@ p1 {
     transform: translateY(-50%) scale(1.25);
 }
 
-/* BREAK */
+/* /// [Animations] */
 
 @keyframes fadeIn {
     0% {opacity:0;}
