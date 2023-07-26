@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    background: green;
+    height: 30px;
+}
+
+.col-sm-2 {
+    border: 2px black solid;
+    background: purple;
+    height: 30px;
+}
