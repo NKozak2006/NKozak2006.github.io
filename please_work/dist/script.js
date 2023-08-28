@@ -30,18 +30,18 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Dawn",
-      "Me & You",
-      "Electro Boy",
-      "Home",
-      "Proxy (Original Mix)"
+      "folklore",
+      "folklore",
+      "folklore",
+      "folklore",
+      "folklore"
     ],
     trackNames = [
-      "Skylike - Dawn",
-      "Alex Skrindo - Me & You",
-      "Kaaze - Electro Boy",
-      "Jordan Schor - Home",
-      "Martin Garrix - Proxy"
+      "Taylor Swift - the 1",
+      "Taylor Swift - cardigan",
+      "Taylor Swift - the last great american dynasty",
+      "Taylor Swift - exile",
+      "Taylor Swift - my tears ricochet"
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
