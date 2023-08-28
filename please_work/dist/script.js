@@ -45,11 +45,11 @@ $(function () {
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/2.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+      "https://nkozak2006.github.io/please_work/src/music/the_1.mp3",
+      "https://nkozak2006.github.io/please_work/src/music/cardigan.mp3",
+      "https://nkozak2006.github.io/please_work/src/music/the_last_great_american_dynasty.mp3",
+      "https://nkozak2006.github.io/please_work/src/music/exile.mp3",
+      "https://nkozak2006.github.io/please_work/src/music/my_tears_ricochet.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
