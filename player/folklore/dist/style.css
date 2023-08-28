@@ -8,6 +8,22 @@ body {
   background-color: rgba(0,0,0,0);
 }
 
+#back {
+  font-family: Helvetica;
+  border-bottom-right-radius: 5px;
+  border-color: #c9c9c9;
+  background: #c9c9c9;
+  border-style: solid;
+  padding: .5% 1% .5% 1%;
+  transition: background 0.5s, color 0.5s, border-color 0.5s;
+}
+
+#back:hover {
+  background: #4f4f4f;
+  color:white;
+  border-color: #4f4f4f;
+}
+
 #app-cover {
   position: absolute;
   top: 50%;
