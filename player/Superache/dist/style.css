@@ -5,7 +5,7 @@
 body {
   font-family: Helvetica, Arial;
   margin: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,1);
 }
 
 #back {
@@ -46,7 +46,7 @@ body {
   right: 15px;
   left: 15px;
   padding: 13px 22px 10px 184px;
-  background-color: #ffe5d4;
+  background-color: #fcb8b8;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
   z-index: 1;
@@ -57,13 +57,13 @@ body {
 }
 
 #album-name {
-  color: #6f5e54;
+  color: #963333;
   font-size: 17px;
   font-weight: bold;
 }
 
 #track-name {
-  color: #bdb3ac;
+  color: #964b4b;
   font-size: 13px;
   margin: 2px 0 13px 0;
   white-space: nowrap;
@@ -89,14 +89,14 @@ body {
 #track-length {
   color: transparent;
   font-size: 11px;
-  background-color: #d6d6d6;
+  background-color: #db3737;
   border-radius: 10px;
   transition: 0.3s ease all;
 }
 
 #track-time.active #current-time,
 #track-time.active #track-length {
-  color: #993e02;
+  color: #990202;
   background-color: transparent;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 #s-area {
-  background-color: #fff1e8;
+  background-color: #ffdbdb;
   cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ body {
 
 #ins-time,
 #s-hover {
-  background-color: #ad7f5f;
+  background-color: #db3737;
 }
 
 #seek-bar {
@@ -144,7 +144,7 @@ body {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #ffa86e;
+  background-color: #ff5c5c;
   transition: 0.2s ease width;
   z-index: 1;
 }
@@ -283,7 +283,7 @@ body {
 
 .button i {
   display: block;
-  color: #e3cfc1;
+  color: #e8a5a5;
   font-size: 26px;
   text-align: center;
   line-height: 1;
@@ -295,9 +295,9 @@ body {
 }
 
 .button:hover {
-  background-color: #c4ad9d;
+  background-color: #ffd1d1;
 }
 
 .button:hover i {
-  color: #fff;
+  color: #ff7373;
 }
