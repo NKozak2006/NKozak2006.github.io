@@ -66,6 +66,9 @@ body {
   color: #acaebd;
   font-size: 13px;
   margin: 2px 0 13px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #track-time {
