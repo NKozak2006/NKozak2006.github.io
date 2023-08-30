@@ -8,6 +8,7 @@ body {
     font-family: Helvetica;
     background: #b0b0b0;
     width: fit-content;
+    height: fit-content;
     padding: 1.5% 2% 1.5% 2%;
     border-radius: 10px;
     position: absolute;
@@ -17,11 +18,22 @@ body {
 }
 
 button {
+    margin: 10px;
     font-family: inherit;
     border-radius: 5px;
     border-width: 2px;
     border-style: solid;
     transition:  background 0.5s, color 0.5s, border-color 0.5s;
+    line-height: 140%;
+    white-space: nowrap;
+}
+
+button div {
+    padding: 4% 5% 4% 5%;
+}
+
+#line_2 {
+    padding: 0 0 0 0.12%;
 }
 
 #_1 {
@@ -58,4 +70,64 @@ button {
     background: #5c0101;
     color: white;
     border-color: #ff5151;
+}
+
+#_4 {
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+#_4:hover {
+    border-color: white;
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+
+#_5 {
+    border-color: #3b4975;
+    color:  #243589;
+    background-color: #d8cad9;
+}
+
+#_5:hover {
+    border-color: #c07b8a;
+    color: #dfb0cc;
+    background-color: #2d3351;
+}
+
+#_6 {
+    border-color: #6f6874;
+    color: #5a788c;
+    background-color: #d8ced6;
+}
+
+#_6:hover {
+    border-color: #ac8786;
+    color: #d8d7dc;
+    background-color: #4f7d90;
+}
+
+#_7 {
+    border-color: #ceba96;
+    color: #eadccb;
+    background-color: #ac777f;
+}
+
+#_7:hover {
+    border-color: #c19ea2;
+    color: #9b6773;
+    background-color: #d0b49e;
+}
+
+#_8 {
+    border-color: #a9854f;
+    color: #423a17;
+    background-color: #f2a19f;
+}
+
+#_8:hover {
+    border-color: #ba595b;
+    color: #f1aaa3;
+    background-color: #3e3a1d;
 }
