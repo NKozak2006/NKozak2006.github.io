@@ -183,12 +183,20 @@ $(function () {
 
     seekBar.width(playProgress + "%");
 
-    if (playProgress == 100) {
+    if (playProgress == 100 && currIndex != 15) {
+      selectTrack(1);
+    }
+    if (playProgress == 100 && currIndex == 15) {
       i.attr("class", "fa fa-play");
       seekBar.width(0);
       tProgress.text("00:00");
       albumArt.removeClass("buffering").removeClass("active");
       clearInterval(buffInterval);
+      currIndex=-1;
+      selectTrack(0);
+      playPause();
+      playPause();
+      return;
     }
   }
 
