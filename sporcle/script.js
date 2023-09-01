@@ -5,8 +5,10 @@ function choose() {
     }
     if (opt = 0) {
         location.href="https://nkozak2006.github.io/sporcle/Sporcle_Answer_Sheet.xlsx";
+        window.close();
     } else if (opt = 1) {
         location.href="https://nkozak2006.github.io/sporcle/Lana_Answer_Sheet.xlsx";
+        window.close();
     } else {
         alert("Uh oh! Something went wrong! Redirecting you back to Sporcle!");
         location.href="https://www.sporcle.com";
