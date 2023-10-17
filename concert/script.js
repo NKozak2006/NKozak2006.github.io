@@ -99,6 +99,7 @@ function vid() {
     var vid = document.getElementById("vid");
     vid.style.visibility = "visible";
     vid.style.display = "inline-block";
+    vid.click;
     var body = document.getElementById("body");
     body.style.overflow = "hidden";
     setTimeout(lolita, 228000);
@@ -107,6 +108,7 @@ function vid() {
 function lolita() {
     var obj = document.getElementById("vid");
     obj.src = "https://www.youtube.com/embed/CnIfpj0FRNI?si=5ACjBEoU8t2fpTCH";
+    obj.click;
 }
 
 $(document).ready(function() {
