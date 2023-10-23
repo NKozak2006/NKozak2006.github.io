@@ -1,3 +1,5 @@
+var id = setInterval(load, 5000);
+
 document.onkeydown=function(){
     var btn = document.getElementById("button");
     if(window.event.keyCode=='13'){
@@ -167,12 +169,7 @@ $(document).ready(function() {
     });
 });
 
-function refre() {
-    location.reload();
-}
-
 function load() {
-    var id = setTimeout(refre, 5000);
     var h, john, natalie, nathan, lily;
     fetch("https://nkozak2006.app.n8n.cloud/webhook-test/bbcd9487-54f9-449d-8246-49f3f61f44fc")
     .then(response => response.text())
@@ -214,7 +211,7 @@ function load() {
         } else if (natalie == false && nathan == true && lily == true && john == true) {
             obj.innerHTML = "Waiting on 1 person to check in.";
         } else if (natalie == true && nathan == true && lily == true && john == true) {
-            clearTimeout(id);
+            clearInterval(id);
             blank();
         } else {
             alert("Something went wrong!");
