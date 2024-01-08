@@ -185,8 +185,7 @@ $(function () {
 
     if (playProgress == 100 && currIndex != 16) {
       selectTrack(1);
-    }
-    if (playProgress == 100 && currIndex == 16) {
+    } else if (playProgress == 100 && currIndex == 15) {
       i.attr("class", "fa fa-play");
       seekBar.width(0);
       tProgress.text("00:00");
