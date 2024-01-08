@@ -183,19 +183,19 @@ $(function () {
 
     seekBar.width(playProgress + "%");
 
-    if (playProgress == 100 && currIndex != 15) {
+    if (playProgress == 100 && currIndex == 15) {
+      currIndex=-1;
+      selectTrack(-1);
       selectTrack(1);
-    } else if (playProgress == 100 && currIndex == 15) {
+      playPause();
       i.attr("class", "fa fa-play");
       seekBar.width(0);
       tProgress.text("00:00");
       albumArt.removeClass("buffering").removeClass("active");
       clearInterval(buffInterval);
-      currIndex=-1;
-      selectTrack(0);
-      playPause();
-      playPause();
       return;
+    } else if (playProgress == 100 && currIndex != 15) {
+      selectTrack(1);
     }
   }
 
@@ -279,10 +279,38 @@ $(function () {
     $(audio).on("timeupdate", updateCurrTime);
 
     playPreviousTrackButton.on("click", function () {
-      selectTrack(-1);
+      if (currIndex == 0) {
+        currIndex=-1;
+        selectTrack(-1);
+        selectTrack(1);
+        i.attr("class", "fa fa-play");
+        seekBar.width(0);
+        tProgress.text("00:00");
+        albumArt.removeClass("buffering").removeClass("active");
+        clearInterval(buffInterval);
+        playPause();
+        playPause();
+        return;
+      } else {
+        selectTrack(-1);
+      }
     });
     playNextTrackButton.on("click", function () {
-      selectTrack(1);
+      if (currIndex == 15) {
+        currIndex=-1;
+        selectTrack(-1);
+        selectTrack(1);
+        i.attr("class", "fa fa-play");
+        seekBar.width(0);
+        tProgress.text("00:00");
+        albumArt.removeClass("buffering").removeClass("active");
+        clearInterval(buffInterval);
+        playPause();
+        playPause();
+        return;
+      } else {
+        selectTrack(1);
+      }
     });
   }
 

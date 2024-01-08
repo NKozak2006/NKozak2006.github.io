@@ -30,47 +30,59 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache"
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS",
+      "PORTALS"
     ],
     trackNames = [
-      "Conan Gray - Movies",
-      "Conan Gray - People Watching",
-      "Conan Gray - Disaster",
-      "Conan Gray - Best Friend",
-      "Conan Gray - Astronomy",
-      "Conan Gray - Yours",
-      "Conan Gray - Jigsaw",
-      "Conan Gray - Family Line",
-      "Conan Gray - Summer Child",
-      "Conan Gray - Footnote",
-      "Conan Gray - Memories",
-      "Conan Gray - The Exit"
+      "Melanie Martinez - DEATH",
+      "Melanie Martinez - VOID",
+      "Melanie Martinez - TUNNEL VISION",
+      "Melanie Martinez - FAERIE SOIRÉE",
+      "Melanie Martinez - LIGHT SHOWER",
+      "Melanie Martinez - SPIDER WEB",
+      "Melanie Martinez - LEECHES",
+      "Melanie Martinez - BATTLE OF THE LARYNX",
+      "Melanie Martinez - THE CONTORTIONIST",
+      "Melanie Martinez - MOON CYCLE",
+      "Melanie Martinez - NYMPHOLOGY",
+      "Melanie Martinez - EVIL",
+      "Melanie Martinez - WOMB",
+      "Melanie Martinez - POWDER",
+      "Melanie Martinez - PLUTO",
+      "Melanie Martinez - MILK OF THE SIREN"
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9", "_10", "_11", "_12"],
+    albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9", "_10", "_11", "_12", "_13", "_14", "_15", "_16"],
     trackUrl = [
-      "https://nkozak2006.github.io/player/src/Music/Superache/movies.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/people_watching.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/disaster.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/best_friend.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/astronomy.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/yours.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/jigsaw.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/family_line.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/summer_child.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/footnote.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/memories.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/the_exit.mp3"
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/death.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/void.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/tunnel_vision.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/faerie_soiree.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/light_shower.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/spider_web.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/leeches.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/battle_of_the_larynx.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/the_contortionist.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/moon_cycle.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/nymphology.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/evil.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/womb.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/powder.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/pluto.mp3",
+      "https://nkozak2006.github.io/player/src/Music/PORTALS/milk_of_the_siren.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
@@ -171,20 +183,19 @@ $(function () {
 
     seekBar.width(playProgress + "%");
 
-    if (playProgress == 100 && currIndex != 15) {
-      selectTrack(1);
-    }
     if (playProgress == 100 && currIndex == 15) {
+      currIndex=-1;
+      selectTrack(-1);
+      selectTrack(1);
+      playPause();
       i.attr("class", "fa fa-play");
       seekBar.width(0);
       tProgress.text("00:00");
       albumArt.removeClass("buffering").removeClass("active");
       clearInterval(buffInterval);
-      currIndex=-1;
-      selectTrack(0);
-      playPause();
-      playPause();
       return;
+    } else if (playProgress == 100 && currIndex != 15) {
+      selectTrack(1);
     }
   }
 
@@ -268,10 +279,38 @@ $(function () {
     $(audio).on("timeupdate", updateCurrTime);
 
     playPreviousTrackButton.on("click", function () {
-      selectTrack(-1);
+      if (currIndex == 0) {
+        currIndex=-1;
+        selectTrack(-1);
+        selectTrack(1);
+        i.attr("class", "fa fa-play");
+        seekBar.width(0);
+        tProgress.text("00:00");
+        albumArt.removeClass("buffering").removeClass("active");
+        clearInterval(buffInterval);
+        playPause();
+        playPause();
+        return;
+      } else {
+        selectTrack(-1);
+      }
     });
     playNextTrackButton.on("click", function () {
-      selectTrack(1);
+      if (currIndex == 15) {
+        currIndex=-1;
+        selectTrack(-1);
+        selectTrack(1);
+        i.attr("class", "fa fa-play");
+        seekBar.width(0);
+        tProgress.text("00:00");
+        albumArt.removeClass("buffering").removeClass("active");
+        clearInterval(buffInterval);
+        playPause();
+        playPause();
+        return;
+      } else {
+        selectTrack(1);
+      }
     });
   }
 
