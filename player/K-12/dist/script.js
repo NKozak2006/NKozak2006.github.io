@@ -30,47 +30,50 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache",
-      "Superache"
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12",
+      "K-12"
     ],
     trackNames = [
-      "Conan Gray - Movies",
-      "Conan Gray - People Watching",
-      "Conan Gray - Disaster",
-      "Conan Gray - Best Friend",
-      "Conan Gray - Astronomy",
-      "Conan Gray - Yours",
-      "Conan Gray - Jigsaw",
-      "Conan Gray - Family Line",
-      "Conan Gray - Summer Child",
-      "Conan Gray - Footnote",
-      "Conan Gray - Memories",
-      "Conan Gray - The Exit"
+      "Melanie Martinez - Wheels On The Bus",
+      "Melanie Martinez - Class Fight",
+      "Melanie Martinez - The Principal",
+      "Melanie Martinez - Show & Tell",
+      "Melanie Martinez - Nurse's Office",
+      "Melanie Martinez - Drama Club",
+      "Melanie Martinez - Strawberry Shortcake",
+      "Melanie Martinez - Lunchbox Friends",
+      "Melanie Martinez - Orange Juice",
+      "Melanie Martinez - Detention",
+      "Melanie Martinez - Teacher's Pet",
+      "Melanie Martinez - High School Sweethearts",
+      "Melanie Martinez - Recess"
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9", "_10", "_11", "_12"],
+    albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9", "_10", "_11", "_12", "_13"],
     trackUrl = [
-      "https://nkozak2006.github.io/player/src/Music/Superache/movies.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/people_watching.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/disaster.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/best_friend.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/astronomy.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/yours.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/jigsaw.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/family_line.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/summer_child.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/footnote.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/memories.mp3",
-      "https://nkozak2006.github.io/player/src/Music/Superache/the_exit.mp3"
+      "https://nkozak2006.github.io/player/src/Music/K-12/wheels_on_the_bus.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/class_fight.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/the_principal.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/show_&_tell.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/nurses_office.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/drama_club.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/strawberry_shortcake.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/lunchbox_friends.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/orange_juice.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/detention.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/teachers_pet.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/high_school_sweethearts.mp3",
+      "https://nkozak2006.github.io/player/src/Music/K-12/recess.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
@@ -171,10 +174,10 @@ $(function () {
 
     seekBar.width(playProgress + "%");
 
-    if (playProgress == 100 && currIndex != 15) {
+    if (playProgress == 100 && currIndex != 13) {
       selectTrack(1);
     }
-    if (playProgress == 100 && currIndex == 15) {
+    if (playProgress == 100 && currIndex == 13) {
       i.attr("class", "fa fa-play");
       seekBar.width(0);
       tProgress.text("00:00");
