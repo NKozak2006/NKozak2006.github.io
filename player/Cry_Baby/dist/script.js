@@ -183,10 +183,10 @@ $(function () {
 
     seekBar.width(playProgress + "%");
 
-    if (playProgress == 100 && currIndex != 15) {
+    if (playProgress == 100 && currIndex != 16) {
       selectTrack(1);
     }
-    if (playProgress == 100 && currIndex == 15) {
+    if (playProgress == 100 && currIndex == 16) {
       i.attr("class", "fa fa-play");
       seekBar.width(0);
       tProgress.text("00:00");
