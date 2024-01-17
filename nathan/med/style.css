@@ -61,3 +61,71 @@ option {
     transform: translateX(-50%);
     top: 90%;
 }
+
+@media (max-width: 400px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #1b2021;
+        font-family: Annie Use Your Telescope;
+    }
+    
+    form {
+        text-align: center;
+        width: 80%;
+        height: 70%;
+        background: #89023e;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 15px;
+        border: 4px solid #30343f;
+    }
+    
+    #left {
+        position: absolute;
+        left: 0;
+        color: #ffd9da;
+        width: 50%;
+        top: 45%;
+        transform: translateY(-50%);
+        line-height: 80%;
+    }
+    
+    #right {
+        position: absolute;
+        left: 50%;
+        color: #ffd9da;
+        width: 50%;
+        top: 45%;
+        transform: translateY(-50%);
+        line-height: 80%;
+    }
+    
+    label, input, select, option {
+        font-size: 3.5vw;
+        font-family: inherit;
+    }
+    
+    input, select {
+        background: #ea638c;
+        color: #30343f;
+        border: 3px solid #1b2021;
+        border-radius: 10px;
+    }
+    
+    option {
+        background: #ea638c;
+        color: #30343f;
+    }
+    
+    #submit {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+    }
+}
