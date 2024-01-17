@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #1b2021;
+    font-family: Annie Use Your Telescope;
+}
+
+div {
+    width: 50%;
+    background: #89023e;
+    height: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 15px;
+    border: 4px solid #30343f;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+h1 {
+    font-size: 2.58vw;
+    color: #ffd9da;
+}
+
+button {
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    font-family: inherit;
+    font-size: 2vw;
+    background: #ea638c;
+    color: #30343f;
+    border: 3px solid #1b2021;
+    border-radius: 10px;
+}
+
+#b1 {
+    left: 18.75%;
+}
+
+#b2 {
+    left: 50%;
+}
+
+#b3 {
+    left: 81.25%;
+}

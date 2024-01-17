@@ -1,0 +1,25 @@
+What is Nathan's Birthday?\ e
+What is Nathan's Favorite Color?\ m
+Who is Nathan's Best Friend?\ e
+How many Siblings does Nathan have?\ e
+Does Nathan prefer Cats or Dogs?\ e
+Where is Nathan from (town)?\  h
+What is Nathan's Favorite Lana Del Rey Album?\ h
+What is Nathan's Cat's name?\ m
+How many Cats has Nathan had?\ h
+Nathan is afraid of:\ m
+What is Nathan's Favorite Holiday?\ h
+Where does Nathan work?\ h
+What is Nathan's Lucky Number?\ m
+What is Nathan's Favorite Animal?\ m
+What is Nathan's Favorite Season?\ e
+Does Nathan prefer a PC or Laptop?\ m
+How tall is Nathan?\ m
+Can Nathan Knit or Crochet?\ m
+How many Instruments can Nathan play?\ h
+What Color are Nathan's Bedroom Walls?\ h
+How many Colors has Nathan dyed his Hair?\ h
+Who did Nathan see in Concert? (SHOUTOUT EBBA)\ h
+What Elective did Nathan BRIEFLY teach and ALMOST head in LEAD?\ h
+Nathan is always:\(hot/cold)\ m
+Nathan Unintentionally get most of his Music Taste from which Friend?\ h

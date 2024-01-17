@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="./resstyle.css">
+    <script>
+        function formulate() {
+            var scsc = grade();
+            var data = getCookie("user");
+            var lvl = getCookie("lvl");
+            document.getElementById("name").value = data;
+            document.getElementById("grade").value = scsc;
+            document.getElementById("lvl").value = lvl;
+        }
+    </script>
+    <script src="./script.js"></script>
+</head>
+<body id="bd" onload="fun(); formulate();">
+
+    <h1 id="txt"></h1>
+
+    <form action="http://testing-sql.free.nf/form.php" method="get">
+        <input type="number" id="grade" name="grade">
+        <input type="text" id="name" name="name">
+        <input type="text" id="lvl" name="lvl">
+        <input type="submit" id="sub">
+    </form>
+    
+</body>
+</html>

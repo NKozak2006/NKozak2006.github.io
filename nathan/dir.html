@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <title>_Who Knows Nathan?_</title>
+    <script>
+        function urlcookie() {
+            let params = new URLSearchParams(location.search);
+            var user = params.get('user');
+            setCookie("user",user,5);
+        }
+
+        function setCookie(cname,cvalue,exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=***/***";
+        }
+    </script>
+    <script src="script.js"></script>
+</head>
+<body onload="setInterval(titlechange, 250);urlcookie();">
+
+    <div>
+        <h1>Choose Your Difficulty</h1>
+        <button onclick="location.href='./easyredir.html';" id="b1">Easy</button>
+        <button onclick="location.href='./medredir.html';" id="b2">Medium</button>
+        <button onclick="location.href='./hardredir.html';" id="b3">Hard</button>
+    </div>
+    
+</body>
+</html>

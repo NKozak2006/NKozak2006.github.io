@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_Who Knows Nathan?_</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <script src="../script.js"></script>
+    <script>
+        var v = 0;
+        function ebba() {
+            if (v == 0) {
+                alert("SHOUTOUT TO EBBA!");
+                v = 1;
+            } else {
+                return;
+            }
+        }
+    </script>
+</head>
+<body onload="setInterval(titlechange, 250);">
+    
+    <form action="../res/res.html" method="get" autocomplete="off">
+        <!-- <div id="cont"> -->
+            <div id="left">
+                <label for="bday">What is Nathan's Birthday?&nbsp;</label><input type="date" id="bday" name="bday" required>
+                <br>
+                <br>
+                <label for="bsf">Who is Nathan's Best Friend?&nbsp;</label><input type="text" id="bsf" name="bsf" required>
+                <br>
+                <br>
+                <label for="sib">How many Siblings does Nathan have?&nbsp;</label><input type="number" min="1" max="10" id="sib" name="sib" required>
+                <br>
+                <br>
+                <label for="cd">Does Nathan prefer Cats or Dogs?&nbsp;</label>
+                <select name="cd" id="cd" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="cats">Cats</option>
+                    <option value="dogs">Dogs</option>
+                </select>
+                <br>
+                <br>
+                <label for="szn">What is Nathan's Favorite Season?&nbsp;</label>
+                <select name="szn" id="szn" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                </select>
+                <br>
+                <br>
+                <label for="color">What is Nathan's Favorite Color?&nbsp;</label><input type="text" id="color" name="color" required>
+                <br>
+                <br>
+                <label for="cat">What is Nathan's Cat's name?&nbsp;</label><input type="text" id="cat" name="cat" required>
+                <br>
+                <br>
+                <label for="hair">How many Colors has Nathan dyed his Hair?&nbsp;</label><input type="number" min="1" max="10" id="hair" name="hair" required>
+            </div>
+            <div id="mid">
+                <label for="fear">What is Nathan afraid of?&nbsp;</label>
+                <select name="fear" id="fear" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="spaces">Small Spaces</option>
+                    <option value="death">Death</option>
+                    <option value="spiders">Spiders</option>
+                    <option value="clowns">Clowns</option>
+                </select>
+                <br>
+                <br>
+                <label for="luck">What is Nathan's Lucky number?&nbsp;</label><input type="number" min="1" max="100" id="luck" name="luck" required>
+                <br>
+                <br>
+                <label for="anim">What is Nathan's Favorite Animal?&nbsp;</label><input type="text" id="anim" name="anim" required>
+                <br>
+                <br>
+                <label for="comp">Does Nathan prefer a PC or Laptop?&nbsp;</label>
+                <select name="comp" id="comp" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="pc">PC</option>
+                    <option value="laptop">Laptop</option>
+                </select>
+                <br>
+                <br>
+                <label for="tall">How tall is Nathan?&nbsp;</label><input type="text" id="tall" name="tall" required>
+                <br>
+                <br>
+                <label for="kc">Can Nathan Knit or Crochet?&nbsp;</label>
+                <select name="kc" id="kc" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="knit">Knit</option>
+                    <option value="crocet">Crocet</option>
+                </select>
+                <br>
+                <br>
+                <label for="hc">Nathan is always: </label>
+                <select name="hc" id="hc" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="hot">Hot</option>
+                    <option value="cold">Cold</option>
+                </select>
+                <br>
+                <br>
+                <label for="conc">Who did Nathan see in Concert?&nbsp;</label><input type="text" id="conc" name="conc" required onfocus="ebba();">
+            </div>
+            <div id="right">
+                <label for="alb">What is Nathan's Favorite Lana Del Rey Album?&nbsp;</label>
+                <select name="alb" id="alb" required>
+                    <option selected hidden disabled><-- Select --></option>
+                    <option value="borntodie">Born To Die</option>
+                    <option value="paradise">Paradise</option>
+                    <option value="ultraviolence">Ultraviolence</option>
+                    <option value="honeymoon">Honeymoon</option>
+                    <option value="lustforlife">Lust for Life</option>
+                    <option value="normanfuckingrockwell">Norman Fucking Rockwell</option>
+                    <option value="bluebanisters">Blue Banister</option>
+                    <option value="dykttatuob">Did you know that there's a tunnel under Ocean Blvd</option>
+                </select>
+                <br>
+                <br>
+                <label for="catnum">How many Cats has Nathan had?&nbsp;</label><input type="number" min="1" max="10" id="catnum" name="catnum" required>
+                <br>
+                <br>
+                <label for="hol">What is Nathan's Favorite Holiday?&nbsp;</label><input type="text" id="hol" name="hol" required>
+                <br>
+                <br>
+                <label for="work">Where does Nathan work?&nbsp;</label><input type="text" id="work" name="work" required>
+                <br>
+                <br>
+                <label for="inst">How many Instruments can Nathan play?&nbsp;</label><input type="number" id="inst" name="inst" required>
+                <br>
+                <br>
+                <label for="wall">What Color are Nathan's Bedroom Walls?&nbsp;</label><input type="text" id="wall" name="wall" required>
+                <br>
+                <br>
+                <label for="lead">What Elective did Nathan BRIEFLY teach and ALMOST head in LEAD?&nbsp;</label>
+                <select name="lead" id="lead" required>
+                    <option selected disabled hidden><-- Select --></option>
+                    <option value="enact">EnACT</option>
+                    <option value="socent">SocENT</option>
+                    <option value="impact">IMPACT</option>
+                </select>
+                <br>
+                <br>
+                <label for="music">Nathan Unintentionally get most of his Music Taste from which Friend?&nbsp;</label><input type="text" id="music" name="music" required>
+            </div>
+            <div id="submit">
+                <input type="submit">
+            </div>
+        <!-- </div> -->
+
+    </form>
+
+</body>
+</html>
