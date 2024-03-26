@@ -11,8 +11,8 @@ body {
     width: 75vw;
     height: 80vh;
     position: absolute;
-    left: 48%;
-    top: 48%;
+    left: 50%;
+    top: 50%;
     transform: translateX(-50%) translateY(-50%);
     padding: 0;
     margin: 0;  
@@ -55,15 +55,15 @@ button {
     width: 75vw;
     height: 80vh;
     position: absolute;
-    left: 48%;
-    top: 48%;
+    left: 50%;
+    top: 50%;
     transform: translateX(-50%) translateY(-50%);
     background: white;
     color: black;
 }
 
 #res {
-    top: 47%;
+    top: 50%;
     position: absolute;
     transform: translateY(-50%);
 }
