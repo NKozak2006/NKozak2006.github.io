@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Edu TAS Beginner">
+    <title>_What Lana Song Are You?_</title>
+    <script src="./script.js"></script>
+</head>
+<body onload="updown();">
+    
+    <div id="main">
+
+        <div id="header">
+            <h1>What Lana Song Are You?</h1>
+        </div>
+
+        <div id="qu">
+            <h2 id="qh">What animal do you prefer?</h2>
+        </div>
+
+        <div id="an">
+            <table>
+                <tr>
+                    <td><input type="button" id="a" onclick="addVal('a');" value="Dog"></td>
+                    <td><input type="button" id="b" onclick="addVal('b');" value="Cat"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="c" onclick="addVal('c');" value="Bird"></td>
+                    <td><input type="button" id="d" onclick="addVal('d');" value="Turtle"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="res" style="display:none;">
+            <h2>You Are:</h2>
+            <div id="disp"><h3 id="answer"></h3></div>
+        </div>
+
+    </div>
+
+    <audio controls id="player" src=""></audio>
+
+</body>
+</html>

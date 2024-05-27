@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffc8dd;
+    font-family: Edu TAS Beginner;
+}
+
+#main {
+    width: 75%;
+    height: 80%;
+    background-color: #cdb4db;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;;
+}
+
+#header {
+    padding-top: 2%;
+    width: 100%;
+}
+
+#header h1 {
+    text-align: center;
+    color: #bde0fe;
+}
+
+#qu {
+    padding-top: 3%;
+    width: 100%;
+}
+
+#qu h2 {
+    text-align: center;
+    color: #a2d2ff;
+}
+
+#an {
+    width: 100%;
+}
+
+table {
+    height: 45vh;
+}
+
+table, tr {
+    width: 100%;
+}
+
+tr {
+    height: 50%;
+}
+
+td {
+    width: 50%;
+}
+
+td input {
+    text-wrap: wrap;
+    color: #cdb4db;
+    font-family: inherit;
+    font-size: 200%;
+    border-radius: 15px;
+    border: 3px solid #ffafcc;
+    background: #a2d2ff;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s;
+}
+
+td input:hover {
+    color: #bde0fe;
+    border-color: #a2d2ff;
+    background: #ffafcc;
+}
+
+#res {
+    width: 100%;
+}
+
+#res h2 {
+    text-align: center;
+    color: #a2d2ff;
+}
+
+#disp {
+    border: 5px solid #ffc8dd;
+    color: #ffafcc;
+    font-size: 150%;
+    border-radius: 15px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    height: 30%;
+    background: #a2d2ff;
+    padding: 0;
+    margin: 0;
+    transition: all 1s;
+}
+
+#disp:hover {
+    border: 5px solid #a2d2ff;
+    color: #cdb4db;
+    font-size: 175%;
+    width: 90%;
+    height: 40%;
+    background: #ffc8dd;
+}
+
+#disp h3 {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+audio {
+    visibility: hidden;
+}
