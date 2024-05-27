@@ -17,7 +17,7 @@ function pgLoad() {
 var i = 0;
 var txt = "Well...";
 var speed = 50;
-var x = 5;
+var x = 0;
 var char = 0;
 
 function typeWriter() {
