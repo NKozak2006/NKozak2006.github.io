@@ -63,4 +63,4 @@ jobs:
           app-name: 'nathan-quiz'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1BEEC3BB1B014C1E80F6BAB287DF2F7F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EBBE1BA54D504CD6AA0C926FC7E5D4F4 }}
