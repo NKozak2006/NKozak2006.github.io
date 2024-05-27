@@ -43,7 +43,13 @@
 
         $conn->query($sql);
 
+        $conn->close();
+
     ?>
+
+    <script>
+        location.href = "https://nkozak2006.github.io/nathan/";
+    </script>
 
 
 
