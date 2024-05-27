@@ -59,3 +59,62 @@ input:hover {
     background: #fefae0;
     border: 3px solid #ccd5ae;
 }
+
+@keyframes move {
+    0% {
+        left: 50%;
+        top: 50%;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        width: 100%;
+        height: 25vw;
+    }
+    100% {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+    }
+    10% {
+        transform: rotate(-6deg);
+    }
+    20% {
+        transform: rotate(7deg);
+    }
+    30% {
+        transform: rotate(-8deg);
+    }
+    40% {
+        transform: rotate(9deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(11deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(9deg);
+    }
+    90% {
+        transform: rotate(-6deg);
+    }
+    100% {
+        transform: rotate(5deg)
+    }
+    
+}
