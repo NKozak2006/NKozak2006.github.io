@@ -26,6 +26,7 @@ function grade() {
         if (szn == atob("d2ludGVy")) {
             score += 20;
         }
+        score = Math.ceil((score * 100)) / 100
         return score;
     } else if (lvl == "medium") {
         var params = new URLSearchParams(location.search);
@@ -94,6 +95,7 @@ function grade() {
         if (score == 100.000000002) {
             score = 100;
         }
+        score = Math.ceil((score * 100)) / 100
         return score;
     } else if (lvl == "hard") {
         var params = new URLSearchParams(location.search);
@@ -207,6 +209,7 @@ function grade() {
         if (score > 100) {
             score = 100;
         }
+        score = Math.ceil((score * 100)) / 100
         return score;
     } else {
         alert("ERROR!");
