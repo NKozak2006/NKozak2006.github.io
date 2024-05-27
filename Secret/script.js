@@ -126,6 +126,6 @@ function light() {
 }
 
 function vidPlay() {
-    document.getElementById("vid").style.visibility = "visible";
     document.getElementById("vid").src = "https://www.youtube.com/embed/dQw4w9WgXcQ?si=uOzzr7rnvU1olSMZ?autoplay=1";
+    document.getElementById("vid").style.visibility = "visible";
 }
