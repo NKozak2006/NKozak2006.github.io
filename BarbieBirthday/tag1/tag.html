@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../ref/style.css">
+    <title>Tag #1</title>
+    <script src="./script.js"></script>
+</head>
+<body onload="setup();">
+    <div id="container">
+        <h1 id="text">Dial...</h1>
+        <table>
+            <tr>
+                <td onclick="run1();">1</td>
+                <td onclick="run2();">2</td>
+                <td onclick="run3();">3</td>
+            </tr>
+            <tr>
+                <td onclick="run4();">4</td>
+                <td onclick="run5();">5</td>
+                <td onclick="run6();">6</td>
+            </tr>
+            <tr>
+                <td onclick="run7();">7</td>
+                <td onclick="run8();">8</td>
+                <td onclick="run9();">9</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td onclick="run0();">0</td>
+                <td>*</td>
+            </tr>
+        </table>
+        <button onclick="enter();">Enter</button>
+    </div>
+
+    <div id="cont"><h1 id="res"></h1><br><input type="button" value="Click to Continue" onclick='document.getElementById("form").submit();'></div>
+
+    <form id="form" method="POST" action="https://script.google.com/macros/s/AKfycbyUL3L9XOu6woSB0BOv1etwe10ShTQYFX6Cfgwa4BTIsIIvwgLZ9IRryOnJpL-4g9ftDw/exec">
+        <input id="f1" type="text" name="Location">
+        <input id="f2" type="number" name="TagNumber">
+        <input id="f3" type="text" name="Puzzle">
+    </form>
+    
+</body>
+</html>
