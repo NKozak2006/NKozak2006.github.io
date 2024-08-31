@@ -1,0 +1,66 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+#container {
+    background: white;
+    width: 75vw;
+    height: 30vh;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0;
+    margin: 0;  
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%) translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#cont {
+    display: none;
+    visibility: hidden;
+    margin: 0;
+    width: 75vw;
+    height: 80vh;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+    color: black;
+}
+
+#res {
+    top: 47%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+input, label {
+    left: 50%;
+    position: absolute;
+    top: 55%;
+    transform: translateX(-50%);
+}
+
+label {
+    top: 40%;
+}

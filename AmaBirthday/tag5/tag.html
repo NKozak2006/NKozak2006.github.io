@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../ref/style.css">
+    <title>Tag #5</title>
+    <script src="./script.js"></script>
+</head>
+<body onload="setup();">
+
+    <span class="no" id="t1">Not here</span>
+    <span class="no" id="t2">Try again</span>
+    <span class="no" id="t3">Get better</span>
+    <span class="yes" id="t4" onclick="success();">Found me!</span>
+
+    <div id="cont">
+        <h1 id="res"></h1>
+        <br>
+        <input type="number" id="code">
+        <br>
+        <input type="button" value="Click to Continue" onclick='checkCode(document.getElementById("code").value);' style="margin-top:6%;">
+    </div>
+    
+</body>
+</html>
