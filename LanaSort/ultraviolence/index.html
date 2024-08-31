@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria Hallelujah">
+    <title>Ultraviolence</title>
+    <script src="./script.js"></script>
+</head>
+<body onload="addTo();">
+
+    <div id="menu">
+        <div id="men_cont">
+            <h1>For this test, please pick between the two songs presented. The titles will automatically change.</h1>
+            <input type="button" value="Understood" onclick='document.getElementById("menu").style.animation = "out 2s ease-out forwards";'>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="cont">
+            <table>
+                <tr>
+                    <td id="t1" onclick="check(0);"></td>
+                    <td id="t2" onclick="check(1);"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="res">
+        <div id="res_cont">
+            <table id="tbl">
+                
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
