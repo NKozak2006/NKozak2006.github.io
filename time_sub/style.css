@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #2b2d42;
+    font-family: Caveat;
+}
+
+form {
+    visibility: hidden;
+}
+
+#cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 15px;
+    border: 5px #8d99ae solid;
+    width: 75%;
+    height: 50%;
+    background: #d90429;
+}
+
+#align {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #edf2f4;
+}
+
+button {
+    font-family: inherit;
+    font-size: 4vh;
+    background: #ef233c;
+    color: #edf2f4;
+    border: 3px #2b2d42 solid;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

@@ -1,0 +1,32 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #003049;
+    font-family: Caveat;
+}
+
+table {
+    font-family: inherit;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 75%;
+    text-align: center;
+    color: #fdf0d5;
+    font-size: 4vh;
+}
+
+th {
+    background: #780000;
+}
+
+td {
+    background: #c1121f;
+}
+
+td, th, table {
+    border: 2px #669bbc solid;
+    border-collapse: collapse;
+}

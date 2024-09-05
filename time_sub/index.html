@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In & Out Input</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+</head>
+<body>
+
+    <div id="cont">
+        <div id="align">
+            <h1>Are you leaving or coming back?</h1>
+
+            <button onclick="leave();">Leaving</button>
+            <button onclick="ret();">Returning</button>
+        </div>
+    </div>
+
+    <form id="in-form" method="POST" action="https://script.google.com/macros/s/AKfycbw5tYzAMdJumK5OMlt8WhtuzipPq2RXbH7gwEqBsKqbcWI8jV9VIn5XXjKZNX5fLypS/exec">
+        <input name="In" type="text" id="in-p">
+    </form>
+
+    <form id="out-form" method="POST" action="https://script.google.com/macros/s/AKfycbwvBbJOgibeCsO_BnmZV4x5Lo5zGKTGz_NPKGOl3iDZc1qZ5pgS4nquhzg4a5GzYz4T/exec">
+        <input name="Out" type="text" id="out-p">
+    </form>
+    
+</body>
+</html>
