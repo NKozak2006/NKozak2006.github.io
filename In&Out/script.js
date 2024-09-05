@@ -22,20 +22,20 @@ function load() {
                 in_str = in_arr[1] + "/" + in_arr[2] + "/" + in_arr[0] + " " + in_arr[3] + ":" + in_arr[4] + ":" + in_arr[5];
                 out_arr = outt[j].Out.split(",");
                 out_str = out_arr[1] + "/" + out_arr[2] + "/" + out_arr[0] + " " + out_arr[3] + ":" + out_arr[4] + ":" + out_arr[5];
-                obj.innerHTML += "<tr><td>" + in_str + "</td><td>" + out_str + "</td></tr>";
+                obj.innerHTML += "<tr><td>" + out_str + "</td><td>" + in_str + "</td></tr>";
                 i++;
                 j++;
             }
             while (i < in_len) {
                 in_arr = int[i].In.split(",");
                 in_str = in_arr[1] + "/" + in_arr[2] + "/" + in_arr[0] + " " + in_arr[3] + ":" + in_arr[4] + ":" + in_arr[5];
-                obj.innerHTML += "<tr><td>" + in_str + "</td><td></td></tr>";
+                obj.innerHTML += "<tr><td></td><td>" + in_str + "</td></tr>";
                 i++;
             }
             while (j < out_len) {
                 out_arr = outt[j].Out.split(",");
                 out_str = out_arr[1] + "/" + out_arr[2] + "/" + out_arr[0] + " " + out_arr[3] + ":" + out_arr[4] + ":" + out_arr[5];
-                obj.innerHTML += "<tr><td></td><td>" + out_str + "</td></tr>";
+                obj.innerHTML += "<tr><td>" + out_str + "</td><td></td></tr>";
                 j++;
             }
         });
