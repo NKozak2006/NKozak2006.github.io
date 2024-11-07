@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title>.</title>
+</head>
+<body onload="setTimeout(time1, 500);">
+
+    <form method="get" hidden id="form">
+        <input type="number" id="wins" name="wins" hidden>
+        <submit id="sub"></submit>
+    </form>
+
+    <div id="cont">
+        <div id="pos">
+            <h1>Welcome! Click below to get started or click for instructions!</h1>
+            <button onclick="begin();" class="beg">Begin</button>
+            <button onclick="inst();" id="ins">Instructions</button>
+        </div>
+    </div>
+
+    <div id="instructions">
+        <div id="txt">
+            <h1>Welcome!</h1>
+            <p>The goal of this game is to find the hidden bot moving around the grid! It can be visibly seen if it passes through the trail of 3 cells you leave behind while moving. The bot moves in random directions and only moves when you move. To move, use W(Up), A(Left), S(Down), and D(Right).</p>
+            <button onclick="begin2();" class="beg">Begin</button>
+        </div>
+    </div>
+
+    <div id="res">
+        <div id="out">
+            <h1>Congratulations!</h1>
+            <p id="text"></p>
+            <button onclick="document.getElementById('form').submit();">Yes</button>
+            <button onclick="location.href='https://highseas.hackclub.com/signpost';">No</button>
+        </div>
+    </div>
+
+    <div id="tab">
+
+            <div id="11" class="yes"></div>
+            <div id="12" class="not"></div>
+            <div id="13" class="not"></div>
+            <div id="14" class="not"></div>
+            <div id="15" class="not"></div>
+<br>
+            <div id="21" class="not"></div>
+            <div id="22" class="not"></div>
+            <div id="23" class="not"></div>
+            <div id="24" class="not"></div>
+            <div id="25" class="not"></div>
+<br>
+            <div id="31" class="not"></div>
+            <div id="32" class="not"></div>
+            <div id="33" class="not"></div>
+            <div id="34" class="not"></div>
+            <div id="35" class="not"></div>
+<br>
+            <div id="41" class="not"></div>
+            <div id="42" class="not"></div>
+            <div id="43" class="not"></div>
+            <div id="44" class="not"></div>
+            <div id="45" class="not"></div>
+<br>
+            <div id="51" class="not"></div>
+            <div id="52" class="not"></div>
+            <div id="53" class="not"></div>
+            <div id="54" class="not"></div>
+            <div id="55" class="not bot"></div>
+
+    </div>
+    
+</body>
+</html>
