@@ -26,11 +26,15 @@ button {
     border-style: solid;
     transition:  background 0.5s, color 0.5s, border-color 0.5s;
     line-height: 140%;
-    white-space: nowrap;
+    white-space: pre-line;
+    width: 20%;
+    height: fit-content;
 }
 
 button div {
-    padding: 4% 5% 4% 5%;
+    padding: 5% 0% 5% 0%;
+    text-align: center;
+    display: inline-block;
 }
 
 #line_2 {
@@ -38,97 +42,97 @@ button div {
 }
 
 #_1 {
-    border-color: #6b6b6b;
+    border-color: #6e858b;
     color: black;
-    background: #ffffff;
+    background: #a96e34;
 }
 
 #_1:hover {
-    background: #3c3c3c;
+    background: #b3a452;
     color: white;
-    border-color: #dcdcdc;
+    border-color: #cf9f71;
 }
 
 #_2{
-    border-color: #361800;
-    background: #dbc6ba;
+    border-color: #000000;
+    background: #c6c6c6;
     color: black;
 }
 
 #_2:hover {
-    background: #943600;
+    background: #000000;
     color: white;
-    border-color: #ffe7a1;
+    border-color: #f0f0f0;
 }
 
 #_3{
-    border-color: #750101;
-    background: #ff9393;
+    border-color: #a00a16;
+    background: #a4c8de;
     color: black;
 }
 
 #_3:hover {
-    background: #5c0101;
+    background: #002863;
     color: white;
-    border-color: #ff5151;
+    border-color: #ead8cc;
 }
 
 #_4 {
-    border-color: black;
+    border-color: #385a64;
     color: black;
-    background-color: white;
+    background-color: #eae7de;
 }
 
 #_4:hover {
-    border-color: white;
+    border-color: #b9d9e4;
     color: white;
-    background-color: rgb(61, 61, 61);
+    background-color: #980000;
 }
 
 #_5 {
-    border-color: #3b4975;
-    color:  #243589;
-    background-color: #d8cad9;
+    border-color: #e7bc7e;
+    color:  black;
+    background-color: #7697ab;
 }
 
 #_5:hover {
-    border-color: #c07b8a;
-    color: #dfb0cc;
-    background-color: #2d3351;
+    border-color: #d42226;
+    color: #3f4052;
+    background-color: #e0e6a8;
 }
 
 #_6 {
     border-color: #6f6874;
-    color: #5a788c;
+    color: #888888;
     background-color: #d8ced6;
 }
 
 #_6:hover {
-    border-color: #ac8786;
-    color: #d8d7dc;
-    background-color: #4f7d90;
+    border-color: #e2e2e2;
+    color: #424242;
+    background-color: #888888;
 }
 
 #_7 {
-    border-color: #ceba96;
+    border-color: #f6f6ee;
     color: #eadccb;
-    background-color: #ac777f;
+    background-color: #4e281d;
 }
 
 #_7:hover {
-    border-color: #c19ea2;
-    color: #9b6773;
-    background-color: #d0b49e;
+    border-color: #a19692;
+    color: #000000;
+    background-color: #c2ba96;
 }
 
 #_8 {
-    border-color: #a9854f;
-    color: #423a17;
-    background-color: #f2a19f;
+    border-color: #b0b1b7;
+    color: #cccdd2;
+    background-color: #444854;
 }
 
 #_8:hover {
-    border-color: #ba595b;
-    color: #f1aaa3;
-    background-color: #3e3a1d;
+    border-color: #444854;
+    color: #525a67;
+    background-color: #b0b1b7;
 }
