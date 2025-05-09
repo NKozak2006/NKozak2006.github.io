@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans";
+}
+
+img {
+    width: 20vh;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgb(21, 83, 176);
+    width: 50vw;
+    height: 75vh;
+    text-align: center;
+    border-radius: 5vw;
+    border: .5vw black solid;
+}
+
+h3 {
+    font-size: 3.5vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+.required {
+    color: rgb(153, 0, 0);
+}
+
+input, select, textarea {
+    background: rgb(150, 155, 197);
+    font-family: inherit;
+    border-radius: .4vw;
+    border: .25vh solid rgb(146, 28, 28);
+}
+
+option {
+    background: rgb(150, 155, 197);
+}
+
+textarea {
+    width: 25vw;
+    height: 10vh;
+    resize: none;
+}
+
+button {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 5vw;
+    font-family: inherit;
+    font-size: 1.2vw;
+    background: gray;
+    border: .25vw solid black;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 95%;
+    top: 85%;
+    transition: all .25s;
+}
+
+button:hover {
+    background: darkgray;
+    border: .25vw solid gray;
+}
+
+@media only screen and (min-width: 992px) {
+    h3 {
+        font-size: 3.5vh;
+    }
+    p, input, select, textarea, i, label {
+        font-size: 2vh;
+    }
+    div {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    h3 {
+        font-size: 2.5vh;
+    }
+    p, input, select, textarea, i, label {
+        font-size: 1.75vh;
+    }
+    div {
+        width: 60vw;
+    }
+    input, select, textarea {
+        border-radius: .6vw;
+    }
+    button {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 8vw;
+        font-size: 1.5vw;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 95%;
+        top: 90%;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    h3 {
+        font-size: 2vh;
+    }
+    p, input, select, textarea, i, label {
+        font-size: 1.5vh;
+    }
+    div {
+        width: 75vw;
+    }
+    input, select, textarea {
+        border-radius: .8vw;
+    }
+    textarea {
+        width: 40vw;    
+    }
+    button {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 8vw;
+    font-size: 2.5vw;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 90%;
+    top: 90%;
+    }
+}
