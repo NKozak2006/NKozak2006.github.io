@@ -9,7 +9,7 @@ body {
 
 div {
     width: 75vw;
-    height: 60vh;
+    height: fit-content;
     background: #14213d;
     position: absolute;
     left: 50%;
@@ -18,16 +18,8 @@ div {
     text-align: center;
     border-radius: 15px;
     border: 3px #fca311 solid;
-    padding: 1vh 1vw 1vh 1vw;
+    padding: 1vh 1vw 5vh 1vw;
     color: #e5e5e5;
-}
-
-form {
-    width: 70vw;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 h3 {
