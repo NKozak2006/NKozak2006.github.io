@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    font-family: Harmattan
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+}
+
+div {
+    padding: 0 1.5vw 0 1.5vw;
+    width: 75vw;
+    height: 50vh;
+    background: #14213d;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    text-align: center;
+    border: 3px #fca311 solid;
+    color: #e5e5e5;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 1.5vw;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick A Word</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Harmattan">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div>
+        <form id="form" method="post" action="https://script.google.com/macros/s/AKfycbzkGDPyjN331MYNr6ZR5Y5TG_R9OMQeZncrEFAVwpizzMnOc1eAx2gUU4HIrDakdA8K2g/exec" autocomplete="off">
+
+            <h3>Please pick <u>one word</u> to best describe Ms. Moncek</h3>
+
+            <label for="Name">Name: </label><br>
+            <input type="text" id="Name" name="Name" placeholder="Name (Optional)">
+
+            <br><br>
+
+            <label for="Word">Word: </label><br>
+            <input type="text" id="Word" name="Word" required placeholder="One Word">
+
+            <br><br><br>
+
+            <input type="button" value="Submit" onclick="sub();">
+
+        </form>
+    </div>
+    
+</body>
+</html>

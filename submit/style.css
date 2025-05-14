@@ -1,0 +1,40 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Harmattan;
+    background: #000000;
+}
+
+div {
+    width: 75vw;
+    height: 50vh;
+    background: #14213d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    border-radius: 15px;
+    border: 3px #fca311 solid;
+    padding: 1vh 1vw 1vh 1vw;
+    color: #e5e5e5;
+}
+
+h3 {
+    font-size: 6vw;
+}
+
+input {
+    border: 2px solid #ffffff;
+    color: #14213d;
+    width: 75%;
+    border-radius: 15px;
+    background: #fca311;
+}
+
+label, input {
+    font-family: inherit;
+    font-size: 5.5vw;
+}
